@@ -17,7 +17,7 @@ class ItemRenameCommand extends Command implements PluginIdentifiableCommand {
 	private $loader;
 	
 	public function __construct(Loader $loader) {
-		parent::__construct("itemrename", "Rename an item.", "/itemrename <new name>", ["irename", "irn"]);
+		parent::__construct("rename", "Rename an item.", "/rename <new name>", ["irename", "irn"]);
 		$this->setPermission("itemrename.rename");
 		$this->loader = $loader;
 	}
